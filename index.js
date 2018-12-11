@@ -12,7 +12,7 @@ const middleware = require('./utils/middleware')
 const loginRouter = require('./controllers/login')
 
 
-mongoose.connect(config.mongoUrl)
+mongoose.connect(config.mongoUrl, { useNewUrlParser: true })
 
 /*
 mongoose
