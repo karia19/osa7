@@ -13,6 +13,7 @@ const loginRouter = require('./controllers/login')
 
 
 mongoose.connect(config.mongoUrl)
+
 /*
 mongoose
   .connect(config.mongoUrl)
@@ -36,6 +37,7 @@ app.use('/api/login', loginRouter)
 app.use(middleware.error)
 
 const server = http.createServer(app)
+
 
 server.listen(config.port, () => {
   console.log(`serve ${config.port}`)
