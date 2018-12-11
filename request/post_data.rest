@@ -1,0 +1,13 @@
+
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkthcnBwYSIsImlkIjoiNWJhY2QzNTQ0ZmVkZDAwNTVjZWRmOWZiIiwiaWF0IjoxNTM4MDUzMzk4fQ.cyMNWMtQRsbvdPa7wjhC4G8YprdnXiqU5Ju1ZQXErts
+
+   {
+    "title": "Java",
+    "author": "Jarla Java",
+    "url": "google.fi/java",
+    "likes": 2
+   }
+
+    

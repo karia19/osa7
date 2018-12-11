@@ -1,0 +1,15 @@
+
+
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkthcnBwYSIsImlkIjoiNWJhY2I4MWQ3MDE4ZmYwNDQwMmFiNDUzIiwiaWF0IjoxNTM4MDUwNjI5fQ.MOPWsym29J9I9TvkYDa6Iw-EUKJruoD6V8QfmQ3ILCs
+
+   {
+    "title": "Kesäloma",
+    "author": "Maijaa Mallikas",
+    "url": "google.fi/java/node",
+    "likes": 1,
+    "userId": "5bacb81d7018ff04402ab453"
+   }
+
+    

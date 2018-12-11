@@ -1,0 +1,33 @@
+{
+  "name": "osa4",
+  "version": "1.0.0",
+  "description": "osa4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "cross-env NODE_ENV=development node_modules/.bin/nodemon index.js",
+    "lint": "eslint .",
+    "test": "cross-env NODE_ENV=test node_modules/.bin/jest --verbose"
+  },
+  "author": "kari",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.14"
+    
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "supertest": "^3.3.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

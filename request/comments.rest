@@ -1,0 +1,7 @@
+
+POST   http://localhost:3001/api/blogs/5c07a85da71d0908d38e0193/comments
+Content-Type: application/json
+
+    {
+    "comments": "Musta finByid"
+    }
