@@ -4,7 +4,7 @@ const loginRouter = require('express').Router()
 const User = require('../models/user')
 
 loginRouter.post('/', async (request, response) => {
-  
+  console.log(process.env.SECRET)
   try {
   const body = request.body
 
@@ -27,7 +27,7 @@ loginRouter.post('/', async (request, response) => {
   
 
   const token = jwt.sign(userForToken, process.env.SECRET)
-  console.log(process.env.SECRET)
+  
 
 
   response.status(200).send({ token, username: user.username, name: user.name })
