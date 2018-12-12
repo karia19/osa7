@@ -5,6 +5,7 @@ const User = require('../models/user')
 
 loginRouter.post('/', async (request, response) => {
   
+  try {
   const body = request.body
 
   const user = await User.findOne({ username: body.username })
@@ -26,10 +27,13 @@ loginRouter.post('/', async (request, response) => {
   
 
   const token = jwt.sign(userForToken, process.env.SECRET)
+  console.log(process.env.SECRET)
 
 
   response.status(200).send({ token, username: user.username, name: user.name })
-  
+}catch(error) {
+  console.log(error)
+}
 
 })
 
