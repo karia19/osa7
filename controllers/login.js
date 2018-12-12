@@ -4,7 +4,7 @@ const loginRouter = require('express').Router()
 const User = require('../models/user')
 
 loginRouter.post('/', async (request, response) => {
-  console.log(process.env.SECRET)
+ 
   try {
   const body = request.body
 
